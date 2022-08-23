@@ -1,0 +1,455 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+:root{
+    --color:rgb(255, 217, 0);
+}
+
+*::selection{
+    background-color: var(--color);
+    color: #ffffff;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+li{
+    text-decoration: none;
+    margin: 10px;
+}
+a{
+    color: aqua;
+    text-decoration: none;
+}
+img{width: 70px;}
+
+.nav ul {
+   
+display: flex;
+justify-content: space-between;
+list-style-type: none;
+transition: 1s;
+
+}
+
+.imgbtn{
+    width: 30px;
+    background-color: #8ddd57;
+    margin: 5px;
+    transition: 1s;
+
+
+}
+
+#btntoggle:hover{
+    cursor: pointer; 
+    background-color: #385f1e;
+  
+
+
+}
+
+#logginoggle:hover{
+    cursor: pointer; 
+    background-color: #385f1e;
+  
+
+
+}
+.btnserc{
+    float: right;
+}
+
+.sersection{
+
+    margin: auto;
+    background-color: #5a7272;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    top: -1030px;
+    transition: 2s;
+    z-index: 1002;
+    position: relative;
+}
+.clickserch{
+    background-color: rgb(214, 183, 9);
+    width: 70px;
+    border-radius: 4px;
+    border: 1px solid;
+    height: 35px;
+    margin: 11px;
+  
+}
+.txtserch{
+    border-radius: 4px;
+    border: 1px solid;
+    height: 30px;
+    margin: 14px;
+    width: 100%;
+
+}
+
+input[type="text"]{
+    height: 30px;
+}
+
+
+a:hover{
+    color: #c3b045;
+  
+}
+
+.login{
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: -1000px;
+    left: 25%;
+    font-size: 2vw;
+    z-index: 1001;
+
+}
+.login div ,.login input ,.login p{
+    margin-top: 10px;
+}
+
+
+
+
+.infoglobal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    color: white;
+}
+.toglemainimages{
+    width: 100px;
+    background-color: #706250;
+    padding: 4px;
+    border-radius: 12px;
+display: flex;
+}
+
+
+.toglemainimages div{
+   cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 12px;
+    height: 10px;
+    width: 10px;
+    margin-left: 10px;
+}
+
+.toglemainimages div:hover{
+    
+     background-color: #fffb01;
+ }
+ input[type="button"]:hover{
+    background-color: #a9941b;
+}
+
+.btndescver{
+    margin: 10px;
+    background-color: #ffe75b;
+    color: white;width: 40%;
+     height: 30px;border: 1px;
+     border-radius: 5%;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.btnhvr{
+background-color: #ffe75b;
+color: white;
+height: 30px;
+border: 1px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.pspna{
+    transition: 1s;
+  color: rgb(251, 255, 1);
+
+}
+
+.pspna:hover{
+
+    color: rgb(182, 98, 3);
+  
+  }
+
+  .menuicon{
+      position: absolute;
+      z-index: 1003;
+      top: 10px;
+      width: 30px;
+      left: 10px;
+  }
+  .menuicon img{
+  width: 100%;
+
+  }
+  .cheader{
+    background-color: #71766d;
+    position: fixed;
+    z-index: 99;
+  }
+ 
+
+  .spnbooking span{
+background-color: #fffb01;
+padding: 5px;
+color: rgb(255, 94, 0);
+font-size: 4vw;
+border-radius: 5px;
+  }
+  .spnbooking{
+   text-align: center;
+      }
+ 
+.bookingsection{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.imgbooking 
+{
+width: 50%;
+}
+.imgbooking img
+{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.frmboooking{
+    margin-top: 50px;
+    width: 50%;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    /* background-color: #a5ffff; */
+    box-shadow: 0px 0px 17px black;
+    border-radius: 12px;
+    margin-right: 30px;
+    height: 47vw;
+}
+.frmboooking p{
+    width: 88%;
+    margin: auto;
+  
+}
+
+.frmboooking input:not(.last){
+    height: 5vw;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 88%;
+    margin: auto;
+  
+}
+.last{
+    height: 5vw;
+    width: 88%;
+    margin: auto;
+}
+
+
+.menuicon{display: none;}
+
+.packagingsection{
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+}
+.packagingsection div img{
+    width: 100%;
+    border-radius: 13px;
+}
+
+.packagingsection p,.packagingsection h3{
+    margin-left: 15px;
+}
+
+.lesarticl{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    gap: 55px;
+    font-size: 2vw;
+}
+
+
+h3{
+font-size: 5vw;
+}
+
+
+
+
+
+
+
+
+
+ .lesart2{
+    margin-top: 40px;margin-left: 10%;margin-right: 10%;
+
+    }
+
+
+
+
+
+.footer{
+    display: flex;
+    font-size: 2.3vw;
+    color: #e5d7d7;
+    background-color: #2e2e1a;
+    gap: 40px;
+}
+.aboutus{
+    width: 45%;
+margin: auto;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.builder{
+
+text-align: center;
+font-size: 2.3vw;
+    color: #e5d7d7;
+    background-color: #2e2e1a;
+
+}
+
+.lign {
+    width: 70%;
+    height: 0;
+    border: 1px solid black;
+    background-color: #ffb341;
+    margin: auto;
+}
+@media only screen and (max-width:767px){
+
+    .footer{
+        text-align: center;
+        display: block;
+        
+       
+    }
+    
+
+
+    .lesarticl {
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+    .lesart2{
+        
+            margin-left: 32%;
+            width: 70%;
+            margin-right: 10%;
+        
+    }
+   
+
+    .packagingsection{
+        display: block;
+     
+    }
+
+    .packagingsection div{
+        display: block;
+        font-size: 2vw;
+        width: 70%;
+        margin: auto;
+     
+    }
+
+  .menuicon{display: block;}
+  
+.container .divlogo {
+  position: absolute;
+  right: 45%;
+}
+
+.container .nav ul{
+  display: none;
+  margin-left: 100%;
+  margin-top: 60px;
+}
+
+.infoglobal {
+  top: 12%;
+}
+
+
+.bookingsection{
+  display: block;
+ margin: auto;
+  width: 100%;
+}
+
+.bookingsection div{
+      margin: auto;
+  }
+  
+.incontact{
+    font-size: 2vw;
+
+}
+
+ 
+
+}
+
+
+svg{
+    width: 8vw;
+    height: 14vw;
+    fill: #ffb341;
+}
+#ultoggle li{
+transition: all 2s;
+}
+
+#ultoggle li:hover{
+    transform: scale(2);
+    margin-left: 30px;
+    margin-right: 30px;
+}
